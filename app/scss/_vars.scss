@@ -1,0 +1,40 @@
+$logo-color: rgba(85, 102, 134, 1);
+$accent: #2d72cd;
+$accent-hover: #5284f7;
+$text-color: #213252;
+$active: #375aac;
+
+%inter-400 {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+
+%inter-600 {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+}
+
+%inter-800 {
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+}
+
+$breakpoints: (
+  "phone": 560px,
+  "tablet": 768px,
+  "tablet-2": 992px,
+  "desktop": 1230px,
+  "desktop-2": 1920px,
+);
+
+@mixin mq($width, $type: min) {
+  @if map_has_key($breakpoints, $width) {
+    $width: map_get($breakpoints, $width);
+    @if $type == max {
+      $width: $width - 1px;
+    }
+    @media only screen and (#{$type}-width: $width) {
+      @content;
+    }
+  }
+}
