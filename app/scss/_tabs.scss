@@ -100,7 +100,7 @@
     flex-direction: column;
     flex-wrap: wrap;
     width: 50%;
-    padding: 108px 63px 0;
+    padding: 108px 63px 88px 63px;
     border-bottom: 1px solid #aeb6bb;
     border-right: 1px solid #aeb6bb;
 
@@ -113,6 +113,7 @@
 
     ul {
       padding-left: 24px;
+      margin-bottom: 10px;
     }
 
     li {
@@ -126,7 +127,7 @@
   }
 
   &__button{
-    margin: auto 0 88px;
+    margin-top: auto;
     padding: 15px 52px;
     align-self: start;
   }

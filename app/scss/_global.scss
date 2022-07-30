@@ -11,6 +11,15 @@
   overflow: hidden;
 }
 
+.container-fluid {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: relative;
+}
+
 .container {
   max-width: 1250px;
   padding: 0 10px;
